@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f1e8">
+  <meta name="description" content="An interactive historical map comparing North Carolina travel guides and the Green Book, 1939–1956. Eight places, two perspectives on travel through the Jim Crow South.">
+  <title>Two Journeys on the Same Southern Roads · ENGL 102</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <meta property="og:title" content="Two Journeys on the Same Southern Roads">
+  <meta property="og:description" content="Eight North Carolina stops compare the promise of tourism with the practical travel network of the Green Book, 1939–1956.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jmcguigan10.github.io/engl-102-project/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="content.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#journey">Skip to the journey</a>
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Two Journeys, home"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 7c5-2 9-2 12 1 3-3 7-3 12-1v19c-5-2-9-2-12 1-3-3-7-3-12-1zM16 8v19" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><span>Two Journeys<span class="wordmark-sub">A historical map of the Jim Crow South</span></span></a>
+    <nav class="main-nav" aria-label="Main navigation"><a href="#journey">The journey</a><a href="#reading">Reading the guides</a><a href="#sources">Sources <span aria-hidden="true">↗</span></a></nav>
+    <span class="course-label">ENGL 102 <span>·</span> Fall 2026</span>
+  </header>
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="little-line"></span> North Carolina, 1939–1956</p>
+        <h1 id="hero-title">Two Journeys<br>on the Same<br><em>Southern Roads.</em></h1>
+        <p class="hero-deck">The same destination.<br>A different journey.</p>
+        <p class="hero-description">Eight places reveal how mainstream travel guides and the <cite>Green Book</cite> framed the freedom—and the limits—of travel in the Jim Crow South.</p>
+        <a class="button button-dark" href="#journey">Explore the journey <span aria-hidden="true">↗</span></a>
+        <div class="hero-meta"><span><b>1939—1956</b>Period of study</span><span><b>08 stops</b>Across North Carolina</span><span><b>02 perspectives</b>A shared landscape</span></div>
+      </div>
+      <figure class="hero-visual">
+        <div class="map-paper">
+          <div class="paper-header"><span>A journey through</span><strong>North Carolina</strong><span class="paper-edition">An archival inquiry<br>No. 01 / ENGL 102</span></div>
+          <img class="route-art" src="assets/route.svg" width="920" height="535" alt="Schematic North Carolina map connecting Asheville, Charlotte, Winston-Salem, Greensboro, Durham, Raleigh, New Bern, and Wilmington.">
+          <div class="paper-footer"><span><i class="map-key"></i> Eight places. Two perspectives.</span><span>Mountains → Piedmont → Coast</span></div>
+        </div>
+        <figcaption>Schematic journey; lines do not trace historic highways.</figcaption>
+        <span class="figure-number" aria-hidden="true">Fig. 01</span>
+      </figure>
+    </section>
+    <section class="premise" aria-label="The guiding question">
+      <span class="section-index">The guiding question</span>
+      <p>What does a travel guide promise—and <em>who can take that promise for granted?</em></p>
+      <span class="premise-aside">Read the road through<br>the places that made travel possible.</span>
+    </section>
+    <section class="journey-section" id="journey" aria-labelledby="journey-title">
+      <div class="section-heading"><div><p class="eyebrow">01 / Follow the evidence</p><h2 id="journey-title">A shared map.<br><em>Unequal possibilities.</em></h2></div><p>Move from the mountains to the coast. At each stop, compare what the guides describe, what they list, and what the difference tells us.</p></div>
+      <div class="journey-toolbar"><span class="small-label"><span class="red-dot"></span> Select a stop</span><span class="toolbar-instruction">Use the map, the place names, or the arrows.</span><button class="text-button" id="share-stop" type="button">Copy this stop’s link <span aria-hidden="true">↗</span></button></div>
+      <div id="stop-nav" class="stop-nav" role="group" aria-label="Journey stops"></div>
+      <div class="map-frame">
+        <div class="map-caption"><span class="small-label">Interactive story map</span><span>Modern basemap · city-level locations</span></div>
+        <div id="storymap" class="storymap" aria-label="Interactive map of the eight North Carolina stops">
+          <div class="map-fallback" id="map-fallback"><img src="assets/route.svg" alt="Schematic map showing the eight journey locations."><p id="map-status">Loading the interactive map…</p></div>
+        </div>
+        <div class="map-footnote"><span>Connecting lines show the exhibit sequence, not a reconstructed historic route.</span><a href="https://storymap.knightlab.com/" target="_blank" rel="noopener noreferrer">Built with StoryMapJS ↗</a></div>
+      </div>
+      <article class="stop-detail" id="stop-detail" aria-labelledby="stop-title" aria-live="polite"></article>
+      <div class="stop-controls"><button class="arrow-button" id="previous-stop" type="button"><span aria-hidden="true">←</span> Previous stop</button><span id="stop-count" class="small-label">01 / 08</span><button class="arrow-button" id="next-stop" type="button">Next stop <span aria-hidden="true">→</span></button></div>
+      <noscript><p class="noscript-note">This interactive exhibit requires JavaScript. Read the original sources: <a href="https://archive.org/details/northcarolinagui00fede">1939 North Carolina guide</a>, <a href="https://digitalcollections.nypl.org/items/47e874a0-1a74-0132-a7fb-58d385a7bbd0">1941 Green Book</a>, and <a href="https://digitalcollections.nypl.org/items/181520c0-1a71-0132-718b-58d385a7bbd0">Fall 1956 Green Book</a>.</p></noscript>
+    </section>
+    <section class="reading-section" id="reading" aria-labelledby="reading-title">
+      <div class="section-heading"><div><p class="eyebrow">02 / Reading between the lines</p><h2 id="reading-title">A guide is also<br><em>a point of view.</em></h2></div><p>These publications describe the same state for different readers. Read their language, their omissions, and their practical advice together.</p></div>
+      <div class="reading-grid">
+        <article class="reading-card"><span class="reading-number">01</span><h3>The invitation</h3><p>Mainstream guides present scenery, history, attractions, and accommodations. Their descriptions suggest what a visitor should see—and which traveler the guide imagines.</p></article>
+        <article class="reading-card"><span class="reading-number">02</span><h3>The infrastructure</h3><p>The <cite>Green Book</cite> identifies hotels, tourist homes, restaurants, and other services for Black travelers. An address is evidence of a network that helped make a trip possible.</p></article>
+        <article class="reading-card"><span class="reading-number">03</span><h3>The limits of the evidence</h3><p>A missing listing does not prove that a business excluded Black customers. A later listing does not establish when a business opened. Each comparison keeps those limits visible.</p></article>
+      </div>
+      <div id="promotion-evidence"></div>
+      <div class="method-note"><span class="section-index">How to read this map</span><p>The 1939 guide and 1941 <cite>Green Book</cite> provide the closest comparison. The 1956 edition offers a later snapshot. City markers give geographic context; historical street addresses are preserved as printed and are not exact geocoded business locations.</p><a class="inline-link" href="#sources">See the source notes <span aria-hidden="true">↗</span></a></div>
+      <div id="route-evidence"></div>
+    </section>
+    <section class="sources-section" id="sources" aria-labelledby="sources-title">
+      <div class="section-heading"><div><p class="eyebrow">03 / The archive</p><h2 id="sources-title">Return to<br><em>the source.</em></h2></div><p>The evidence is open to inspection. Follow each archive link to read the original document and check the printed page references.</p></div>
+      <div class="sources-grid" id="sources-grid"></div>
+      <div class="citation-note"><span class="small-label">A note on citations</span><p>Page references refer to the printed publication unless marked otherwise. Scans may use a different viewer page number. Original titles, racial terminology, and addresses are preserved in the scans; interpretation uses modern language.</p></div>
+    </section>
+    <section class="closing"><p class="eyebrow">The road is a record</p><p>A map tells us where.<br>A guide helps us ask <em>for whom.</em></p><a href="#top" class="inline-link">Return to the beginning <span aria-hidden="true">↑</span></a></section>
+  </main>
+  <footer class="site-footer"><span>Two Journeys on the Same Southern Roads</span><span>An ENGL 102 historical inquiry <span aria-hidden="true">·</span> 2026</span><a href="#sources">Sources &amp; method</a></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
