@@ -8,7 +8,7 @@ The exhibit follows a simple sequence: introduction, five objects, and notes wit
 
 ## Assignment coverage
 
-- A 481-word introduction explains the historical context, research question, audience, and purpose.
+- A 472-word introduction explains the historical context, research question, audience, and purpose.
 - Five archival objects represent photographic, textual, and cartographic media.
 - Every object has a visible analytical label of 100–200 words, an image, identifying information, and an archival scan link.
 - Numbered Chicago notes connect interpretations to their sources. The bibliography includes all five primary publications/objects and two peer-reviewed journal articles by Isabel Dorothea Kalous and Ethan Bottone.
