@@ -8,12 +8,12 @@ The exhibit follows a simple sequence: introduction, five objects, and notes wit
 
 ## Assignment coverage
 
-- A 472-word introduction explains the historical context, research question, audience, and purpose.
+- A 451-word introduction explains the historical context, research question, audience, and purpose.
 - Five archival objects represent photographic, textual, and cartographic media.
 - Every object has a visible analytical label of 100–200 words, an image, identifying information, and an archival scan link.
 - Numbered Chicago notes connect interpretations to their sources. The bibliography includes all five primary publications/objects and two peer-reviewed journal articles by Isabel Dorothea Kalous and Ethan Bottone.
 
-Word counts apply to introduction prose and object labels, excluding headings, metadata, captions, and note markers. Classroom feedback and instructor review remain part of the assignment process.
+Word counts apply to introduction prose and object labels, excluding headings, metadata, captions, and note markers.
 
 ## Run locally
 
@@ -36,9 +36,9 @@ When changing prose, recheck the introduction’s 400–600-word range and each 
 
 ## Historical method
 
-The exhibit distinguishes promotional rhetoric, guidebook categories, directory recommendations, advertising claims, and road connections. A listing does not guarantee safety; omission does not prove exclusion; and the 1956 advertisement does not demonstrate steady improvement since 1941. Historical racial terminology appears in original titles and scans.
+The calendar records the state’s promotion of leisure. The guide page records published racial categories for hotels and cinemas. The Green Book entries record recommended businesses in 1941. Payne’s advertisement records how the tourist home presented its accommodations in Fall 1956. The map shows western road connections in 1939. Historical racial terminology appears in original titles and scans.
 
-The Payne’s image is a clearly identified crop of printed page 47. Western Carolina University’s numbered overlays on the 1939 highway map are identified as modern annotations. The map does not reconstruct any particular traveler’s itinerary.
+The Payne’s image is a clearly identified crop of printed page 47. Western Carolina University’s numbered overlays on the 1939 highway map are identified as modern annotations.
 
 The preceding interactive eight-city presentation is preserved in Git history at commit `7a7efe7e35f00a7576bd48683cf8e4264c880472`.
 
